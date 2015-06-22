@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>C16C4B97-A98F-430E-A52A-F9183F487762</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Blocstagram</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>31D48A75DCAC7EE9D2E2A188DC8C109227C87642</key>
+		<string>https://github.com/alexblair1/bloc.git</string>
+		<key>8C45FF8DE2B3BCD03309D67A28370AF04EEA4F60</key>
+		<string>github.com:alexblair1/blocstagram.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Blocstagram/Blocstagram.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>31D48A75DCAC7EE9D2E2A188DC8C109227C87642</key>
+		<string>../../..</string>
+		<key>8C45FF8DE2B3BCD03309D67A28370AF04EEA4F60</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:alexblair1/blocstagram.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>8C45FF8DE2B3BCD03309D67A28370AF04EEA4F60</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>31D48A75DCAC7EE9D2E2A188DC8C109227C87642</string>
+			<key>IDESourceControlWCCName</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>8C45FF8DE2B3BCD03309D67A28370AF04EEA4F60</string>
+			<key>IDESourceControlWCCName</key>
+			<string>blocstagram</string>
+		</dict>
+	</array>
+</dict>
+</plist>
