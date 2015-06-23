@@ -10,6 +10,7 @@
 		49B3124E8EC53774C5CE78F3 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 91340DB2F814262D48B5F5F0 /* libPods.a */; };
 		FA423F361B3899110054F3C3 /* CircleSpinnerView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA423F351B3899110054F3C3 /* CircleSpinnerView.m */; };
 		FA423F391B3899D10054F3C3 /* LikeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FA423F381B3899D10054F3C3 /* LikeButton.m */; };
+		FA423F3C1B38CE1E0054F3C3 /* ComposeCommentView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA423F3B1B38CE1E0054F3C3 /* ComposeCommentView.m */; };
 		FADA8D441B16B5380097EA0D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FADA8D431B16B5380097EA0D /* main.m */; };
 		FADA8D471B16B5380097EA0D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FADA8D461B16B5380097EA0D /* AppDelegate.m */; };
 		FADA8D4F1B16B5380097EA0D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FADA8D4E1B16B5380097EA0D /* Images.xcassets */; };
@@ -44,6 +45,8 @@
 		FA423F351B3899110054F3C3 /* CircleSpinnerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleSpinnerView.m; sourceTree = "<group>"; };
 		FA423F371B3899D10054F3C3 /* LikeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LikeButton.h; sourceTree = "<group>"; };
 		FA423F381B3899D10054F3C3 /* LikeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LikeButton.m; sourceTree = "<group>"; };
+		FA423F3A1B38CE1E0054F3C3 /* ComposeCommentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComposeCommentView.h; sourceTree = "<group>"; };
+		FA423F3B1B38CE1E0054F3C3 /* ComposeCommentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComposeCommentView.m; sourceTree = "<group>"; };
 		FADA8D3E1B16B5380097EA0D /* Blocstagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blocstagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FADA8D421B16B5380097EA0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FADA8D431B16B5380097EA0D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -137,6 +140,8 @@
 				FADA8D461B16B5380097EA0D /* AppDelegate.m */,
 				FAEF57181B1786EB007EDEC8 /* Comment.h */,
 				FAEF57191B1786EB007EDEC8 /* Comment.m */,
+				FA423F3A1B38CE1E0054F3C3 /* ComposeCommentView.h */,
+				FA423F3B1B38CE1E0054F3C3 /* ComposeCommentView.m */,
 				FA423F341B3899110054F3C3 /* CircleSpinnerView.h */,
 				FA423F351B3899110054F3C3 /* CircleSpinnerView.m */,
 				FAEF571B1B1787E4007EDEC8 /* DataSource.h */,
@@ -335,6 +340,7 @@
 				FADEBF751B2257E500932D95 /* ShareUtility.m in Sources */,
 				FADA8D441B16B5380097EA0D /* main.m in Sources */,
 				FA423F391B3899D10054F3C3 /* LikeButton.m in Sources */,
+				FA423F3C1B38CE1E0054F3C3 /* ComposeCommentView.m in Sources */,
 				FA423F361B3899110054F3C3 /* CircleSpinnerView.m in Sources */,
 				FADA8D7E1B16B6530097EA0D /* ImagesTableViewController.m in Sources */,
 			);

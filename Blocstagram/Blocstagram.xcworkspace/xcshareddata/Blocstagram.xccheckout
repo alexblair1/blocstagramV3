@@ -12,6 +12,8 @@
 	<dict>
 		<key>31D48A75DCAC7EE9D2E2A188DC8C109227C87642</key>
 		<string>https://github.com/alexblair1/bloc.git</string>
+		<key>6A7BA9B53087A034388928540C06B1479FFB86B8</key>
+		<string>github.com:alexblair1/blocstagramV3.git</string>
 		<key>8C45FF8DE2B3BCD03309D67A28370AF04EEA4F60</key>
 		<string>github.com:alexblair1/blocstagram.git</string>
 	</dict>
@@ -21,15 +23,17 @@
 	<dict>
 		<key>31D48A75DCAC7EE9D2E2A188DC8C109227C87642</key>
 		<string>../../..</string>
-		<key>8C45FF8DE2B3BCD03309D67A28370AF04EEA4F60</key>
+		<key>6A7BA9B53087A034388928540C06B1479FFB86B8</key>
 		<string>../..</string>
+		<key>8C45FF8DE2B3BCD03309D67A28370AF04EEA4F60</key>
+		<string>../../../blocstagram</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>github.com:alexblair1/blocstagram.git</string>
+	<string>github.com:alexblair1/blocstagramV3.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>8C45FF8DE2B3BCD03309D67A28370AF04EEA4F60</string>
+	<string>6A7BA9B53087A034388928540C06B1479FFB86B8</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
@@ -47,6 +51,14 @@
 			<string>8C45FF8DE2B3BCD03309D67A28370AF04EEA4F60</string>
 			<key>IDESourceControlWCCName</key>
 			<string>blocstagram</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>6A7BA9B53087A034388928540C06B1479FFB86B8</string>
+			<key>IDESourceControlWCCName</key>
+			<string>blocstagramV3</string>
 		</dict>
 	</array>
 </dict>
