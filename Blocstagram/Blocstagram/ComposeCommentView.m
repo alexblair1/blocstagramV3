@@ -91,8 +91,8 @@
     
     if (animated) {
         
-        [UIView animateWithDuration:1.0 delay:0.0
-             usingSpringWithDamping:1.0f initialSpringVelocity:0.0f
+        [UIView animateWithDuration:2.0 delay:0.0
+             usingSpringWithDamping:0.9f initialSpringVelocity:0.0f
                             options:0 animations:^{
                                 [self layoutSubviews];
                             }
