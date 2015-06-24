@@ -61,7 +61,10 @@
     NSDictionary *viewDictionary = NSDictionaryOfVariableBindings(_leftButton, _cameraButton, _rightButton, _whiteView, _purpleView);
     
     //all three buttons have equal widths and are distributed across the whole view
-    NSArray *allButtonsHorizontalConstraints = [NSLayoutConstraint constraintsWithVisualFormat:@"H:|[_leftButton][_cameraButton(==_leftButton)][_rightButton(==_leftButton]|" options:kNilOptions metrics:nil views:viewDictionary];
+    NSArray *allButtonsHorizontalConstraints = [NSLayoutConstraint constraintsWithVisualFormat:@"H:|[_leftButton][_cameraButton(==_leftButton)][_rightButton(==_leftButton)]|"
+                                                                                       options:kNilOptions
+                                                                                       metrics:nil
+                                                                                         views:viewDictionary];
     
     //the left and right buttons have 10 points spacing from the top. all three buttons are aligned with the bottom of the view.
     NSArray *leftButtonVerticalConstraints = [NSLayoutConstraint constraintsWithVisualFormat:@"V:|-10-[_leftButton]|" options:kNilOptions metrics:nil views:viewDictionary];
