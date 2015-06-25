@@ -25,6 +25,7 @@
 		FADEBF6C1B22138900932D95 /* MediaFullScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FADEBF6B1B22138900932D95 /* MediaFullScreenViewController.m */; };
 		FADEBF751B2257E500932D95 /* ShareUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = FADEBF741B2257E500932D95 /* ShareUtility.m */; };
 		FAE518F21B3B40EE00EE57FB /* ImageLibraryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE518F11B3B40EE00EE57FB /* ImageLibraryViewController.m */; };
+		FAE518F51B3C8DF900EE57FB /* PostToInstagramViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE518F41B3C8DF900EE57FB /* PostToInstagramViewController.m */; };
 		FAE90A881B1A705000F2F6A3 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE90A871B1A705000F2F6A3 /* LoginViewController.m */; };
 		FAEF57141B178324007EDEC8 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = FAEF57131B178324007EDEC8 /* User.m */; };
 		FAEF57171B1785AB007EDEC8 /* Media.m in Sources */ = {isa = PBXBuildFile; fileRef = FAEF57161B1785AB007EDEC8 /* Media.m */; };
@@ -81,6 +82,8 @@
 		FADEBF741B2257E500932D95 /* ShareUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareUtility.m; sourceTree = "<group>"; };
 		FAE518F01B3B40EE00EE57FB /* ImageLibraryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageLibraryViewController.h; sourceTree = "<group>"; };
 		FAE518F11B3B40EE00EE57FB /* ImageLibraryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageLibraryViewController.m; sourceTree = "<group>"; };
+		FAE518F31B3C8DF900EE57FB /* PostToInstagramViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostToInstagramViewController.h; sourceTree = "<group>"; };
+		FAE518F41B3C8DF900EE57FB /* PostToInstagramViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostToInstagramViewController.m; sourceTree = "<group>"; };
 		FAE90A861B1A705000F2F6A3 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		FAE90A871B1A705000F2F6A3 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		FAEF57121B178324007EDEC8 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
@@ -186,6 +189,8 @@
 				FADEBF6B1B22138900932D95 /* MediaFullScreenViewController.m */,
 				FAEF571E1B17A5D5007EDEC8 /* MediaTableViewCell.h */,
 				FAEF571F1B17A5D5007EDEC8 /* MediaTableViewCell.m */,
+				FAE518F31B3C8DF900EE57FB /* PostToInstagramViewController.h */,
+				FAE518F41B3C8DF900EE57FB /* PostToInstagramViewController.m */,
 				FADEBF731B2257E500932D95 /* ShareUtility.h */,
 				FADEBF741B2257E500932D95 /* ShareUtility.m */,
 				FADDBEC71B39E66500D6239C /* UIImage+ImageUtilities.h */,
@@ -373,6 +378,7 @@
 				FA423F451B391DBE0054F3C3 /* CameraViewController.m in Sources */,
 				FA423F421B39122B0054F3C3 /* CameraToolbar.m in Sources */,
 				FADA8D441B16B5380097EA0D /* main.m in Sources */,
+				FAE518F51B3C8DF900EE57FB /* PostToInstagramViewController.m in Sources */,
 				FAE518F21B3B40EE00EE57FB /* ImageLibraryViewController.m in Sources */,
 				FA423F391B3899D10054F3C3 /* LikeButton.m in Sources */,
 				FADDBEC91B39E66500D6239C /* UIImage+ImageUtilities.m in Sources */,
