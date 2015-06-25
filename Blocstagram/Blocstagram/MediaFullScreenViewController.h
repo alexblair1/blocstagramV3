@@ -13,11 +13,14 @@
 
 @property (nonatomic, strong) UIScrollView *scrollView;
 @property (nonatomic, strong) UIImageView *imageView;
+@property (nonatomic, strong) Media *media;
 
 //custom initializer (like other view controllers) and will pass it a Media object to display
 - (instancetype) initWithMedia:(Media *)media;
 
 - (void) centerScrollView;
+
+- (void) recalculateZoomScale;
 
 @end
 

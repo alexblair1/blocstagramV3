@@ -23,7 +23,6 @@
 @property (nonatomic, strong) NSLayoutConstraint *imageHeightConstraint;
 @property (nonatomic, strong) NSLayoutConstraint *usernameAndCaptionLabelHeightConstraint;
 @property (nonatomic, strong) NSLayoutConstraint *commentLabelHeightConstraint;
-@property (nonatomic, strong) NSLayoutConstraint *countLabelWidthConstraint;
 @property (nonatomic, strong) NSLayoutConstraint *countLabelHeightConstraint;
 
 @property (nonatomic, strong) UITapGestureRecognizer *tapGestureRecognizer;
@@ -231,30 +230,31 @@ static UIColor *topCommentColor;
         
         self.backgroundColor = usernameLabelGray;
         
-        for (UIView *view in @[self.mediaImageView, self.usernameAndCaptionLabel, self.commentLabel, self.likeButton, self.commentView, self.commentLabel, self.countLabel]) {
+        for (UIView *view in @[self.mediaImageView, self.usernameAndCaptionLabel, self.commentLabel, self.countLabel, self.likeButton, self.commentView, self.commentLabel]) {
             [self.contentView addSubview:view];
             view.translatesAutoresizingMaskIntoConstraints = NO;
             }
         
-        NSDictionary *viewDictionary = NSDictionaryOfVariableBindings(_mediaImageView, _usernameAndCaptionLabel, _commentLabel, _likeButton, _countLabel, _commentView);
+        NSDictionary *viewDictionary = NSDictionaryOfVariableBindings(_mediaImageView, _usernameAndCaptionLabel, _commentLabel, _countLabel, _likeButton, _commentView);
         
         [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[_mediaImageView]|" options:kNilOptions metrics:nil views:viewDictionary]];
         [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[_usernameAndCaptionLabel][_countLabel][_likeButton(==38)]|" options:NSLayoutFormatAlignAllTop | NSLayoutFormatAlignAllBottom metrics:nil views:viewDictionary]];
         [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[_commentLabel]|" options:kNilOptions metrics:nil views:viewDictionary]];
         [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[_commentView]|" options:kNilOptions metrics:nil views:viewDictionary]];
         
+        
         [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[_mediaImageView][_usernameAndCaptionLabel][_commentLabel][_commentView(==100)]"
                                                                         options:kNilOptions
                                                                         metrics:nil
                                                                         views:viewDictionary]];
     
-        self.countLabelWidthConstraint = [NSLayoutConstraint constraintWithItem:_countLabel
-                                                                      attribute:NSLayoutAttributeWidth
-                                                                       relatedBy:NSLayoutRelationEqual
-                                                                         toItem:nil
-                                                                      attribute:NSLayoutAttributeNotAnAttribute
-                                                                     multiplier:1
-                                                                       constant:50];
+//        self.countLabelWidthConstraint = [NSLayoutConstraint constraintWithItem:_countLabel
+//                                                                      attribute:NSLayoutAttributeWidth
+//                                                                       relatedBy:NSLayoutRelationEqual
+//                                                                         toItem:nil
+//                                                                      attribute:NSLayoutAttributeNotAnAttribute
+//                                                                     multiplier:1
+//                                                                       constant:50];
         
         self.countLabelHeightConstraint = [NSLayoutConstraint constraintWithItem:_countLabel
                                                                            attribute:NSLayoutAttributeHeight
@@ -262,7 +262,9 @@ static UIColor *topCommentColor;
                                                                               toItem:nil
                                                                            attribute:NSLayoutAttributeNotAnAttribute
                                                                           multiplier:1
-                                                                            constant:40];
+                                                                            constant:10];
+        
+        self.countLabelHeightConstraint.identifier = @"Count Label height Constraint";
         
         self.imageHeightConstraint = [NSLayoutConstraint constraintWithItem:_mediaImageView
                                                                                     attribute:NSLayoutAttributeHeight
