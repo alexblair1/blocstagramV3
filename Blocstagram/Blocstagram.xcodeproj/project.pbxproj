@@ -26,6 +26,10 @@
 		FADEBF751B2257E500932D95 /* ShareUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = FADEBF741B2257E500932D95 /* ShareUtility.m */; };
 		FAE518F21B3B40EE00EE57FB /* ImageLibraryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE518F11B3B40EE00EE57FB /* ImageLibraryViewController.m */; };
 		FAE518F51B3C8DF900EE57FB /* PostToInstagramViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE518F41B3C8DF900EE57FB /* PostToInstagramViewController.m */; };
+		FAE55A6D1B3DD7E000275612 /* UserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE55A6C1B3DD7E000275612 /* UserTests.m */; };
+		FAE55A711B3DE43700275612 /* CommentTest.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE55A701B3DE43700275612 /* CommentTest.m */; };
+		FAE55A731B3DE49B00275612 /* ComposeCommentTest.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE55A721B3DE49B00275612 /* ComposeCommentTest.m */; };
+		FAE55A771B3DE71800275612 /* MediaTest.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE55A761B3DE71800275612 /* MediaTest.m */; };
 		FAE90A881B1A705000F2F6A3 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE90A871B1A705000F2F6A3 /* LoginViewController.m */; };
 		FAEF57141B178324007EDEC8 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = FAEF57131B178324007EDEC8 /* User.m */; };
 		FAEF57171B1785AB007EDEC8 /* Media.m in Sources */ = {isa = PBXBuildFile; fileRef = FAEF57161B1785AB007EDEC8 /* Media.m */; };
@@ -84,6 +88,10 @@
 		FAE518F11B3B40EE00EE57FB /* ImageLibraryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageLibraryViewController.m; sourceTree = "<group>"; };
 		FAE518F31B3C8DF900EE57FB /* PostToInstagramViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostToInstagramViewController.h; sourceTree = "<group>"; };
 		FAE518F41B3C8DF900EE57FB /* PostToInstagramViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostToInstagramViewController.m; sourceTree = "<group>"; };
+		FAE55A6C1B3DD7E000275612 /* UserTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserTests.m; sourceTree = "<group>"; };
+		FAE55A701B3DE43700275612 /* CommentTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentTest.m; sourceTree = "<group>"; };
+		FAE55A721B3DE49B00275612 /* ComposeCommentTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComposeCommentTest.m; sourceTree = "<group>"; };
+		FAE55A761B3DE71800275612 /* MediaTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaTest.m; sourceTree = "<group>"; };
 		FAE90A861B1A705000F2F6A3 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		FAE90A871B1A705000F2F6A3 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		FAEF57121B178324007EDEC8 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
@@ -217,6 +225,10 @@
 			isa = PBXGroup;
 			children = (
 				FADA8D5D1B16B5380097EA0D /* BlocstagramTests.m */,
+				FAE55A721B3DE49B00275612 /* ComposeCommentTest.m */,
+				FAE55A701B3DE43700275612 /* CommentTest.m */,
+				FAE55A6C1B3DD7E000275612 /* UserTests.m */,
+				FAE55A761B3DE71800275612 /* MediaTest.m */,
 				FADA8D5B1B16B5380097EA0D /* Supporting Files */,
 			);
 			path = BlocstagramTests;
@@ -392,7 +404,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAE55A731B3DE49B00275612 /* ComposeCommentTest.m in Sources */,
+				FAE55A6D1B3DD7E000275612 /* UserTests.m in Sources */,
+				FAE55A711B3DE43700275612 /* CommentTest.m in Sources */,
 				FADA8D5E1B16B5380097EA0D /* BlocstagramTests.m in Sources */,
+				FAE55A771B3DE71800275612 /* MediaTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
