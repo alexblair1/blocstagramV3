@@ -9,12 +9,15 @@
 #import "MediaFullScreenViewController.h"
 #import "Media.h"
 #import "ShareUtility.h"
+#import "MediaTableViewCell.h"
 
-@interface MediaFullScreenViewController () <UIScrollViewDelegate>
+@interface MediaFullScreenViewController () <UIScrollViewDelegate, UIGestureRecognizerDelegate>
 
 
 @property (nonatomic, strong) UITapGestureRecognizer *tap;
 @property (nonatomic, strong) UITapGestureRecognizer *doubleTap;
+//@property (nonatomic, strong) UITapGestureRecognizer *tapGrayArea;
+
 @property (nonatomic, strong) UIButton *shareButton;
 
 
@@ -59,6 +62,10 @@
     self.doubleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(doubleTapFired:)];
     self.doubleTap.numberOfTapsRequired = 2;
     
+//    self.tapGrayArea = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapGrayAreaFired:)];
+//    self.tapGrayArea.cancelsTouchesInView = NO;
+//    self.tapGrayArea.delegate = self;
+    
     [self.tap requireGestureRecognizerToFail:self.doubleTap];
     
     [self.scrollView addGestureRecognizer:self.tap];
@@ -70,6 +77,22 @@
     [self.view addSubview:self.shareButton];
 }
 
+//- (void) tapGrayAreaFired:(UITapGestureRecognizer *)sender {
+//    if (sender.state == UIGestureRecognizerStateEnded) {
+//        CGPoint location = [sender locationInView:nil];
+//        CGPoint locationInVC = [self.presentedViewController.view convertPoint:location fromView:self.view.window];
+//        
+//        if ([self.presentedViewController.view pointInside:locationInVC withEvent:nil] == NO) {
+//            
+//            if (self.presentingViewController) {
+//                NSLog(@"gray area tapped");
+//                [self dismissViewControllerAnimated:YES completion:nil];
+//            }
+//        }
+//    }
+//    
+//    
+//}
 
 - (void) viewWillLayoutSubviews {
     [super viewWillLayoutSubviews];
@@ -169,9 +192,29 @@
 
 - (void) viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    
     [self centerScrollView];
+    
+//    [[[[UIApplication sharedApplication] delegate] window] addGestureRecognizer:self.tapGrayArea];
 }
+
+//- (void) viewWillDisappear:(BOOL)animated {
+//    [super viewWillDisappear:animated];
+//    
+//    [[[[UIApplication sharedApplication] delegate] window] removeGestureRecognizer:self.tapGrayArea];
+//    
+//}
+
+//- (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer {
+//    return YES;
+//}
+//
+//- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer {
+//    return YES;
+//}
+//
+//- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch {
+//    return YES;
+//}
 
 /*
 #pragma mark - Navigation

@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+
 @class Media;
 
 @interface MediaFullScreenViewController : UIViewController
@@ -17,9 +18,7 @@
 
 //custom initializer (like other view controllers) and will pass it a Media object to display
 - (instancetype) initWithMedia:(Media *)media;
-
 - (void) centerScrollView;
-
 - (void) recalculateZoomScale;
 
 @end
