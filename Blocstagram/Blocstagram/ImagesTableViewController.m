@@ -6,6 +6,8 @@
 //  Copyright (c) 2015 blairgraphix. All rights reserved.
 //
 
+
+//pull request test
 #import "ImagesTableViewController.h"
 
 #import "DataSource.h"
@@ -151,16 +153,13 @@
 - (void) cameraViewController:(CameraViewController *)cameraViewController didCompleteWithImage:(UIImage *)image {
     [self handleImage:image withNavigationController:cameraViewController.navigationController];
 }
-
+// fixed Clang error
 - (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
     NSIndexPath *indexPath = self.tableView.indexPathForSelectedRow;
     if (indexPath) {
         [self.tableView deselectRowAtIndexPath:indexPath animated:animated];
     }
-}
-
-- (void) viewWillDisappear:(BOOL)animated {
-    
 }
 
 - (void) refreshControlDidFire:(UIRefreshControl *) sender {
